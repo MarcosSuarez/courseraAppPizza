@@ -18,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="N0p-1l-Qiq">
-                                <rect key="frame" x="190" y="433" width="221" height="29"/>
+                                <rect key="frame" x="185" y="433" width="230" height="29"/>
                                 <segments>
-                                    <segment title="CHICA"/>
+                                    <segment title="PEQUEÑA"/>
                                     <segment title="MEDIANA"/>
                                     <segment title="GRANDE"/>
                                 </segments>
                                 <connections>
-                                    <segue destination="wrf-xM-tcN" kind="show" id="rzy-Xu-U6o"/>
+                                    <segue destination="wrf-xM-tcN" kind="show" identifier="irAMasa" id="rzy-Xu-U6o"/>
                                 </connections>
                             </segmentedControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tamañosPizza2" translatesAutoresizingMaskIntoConstraints="NO" id="3NW-ID-AaF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3NW-ID-AaF">
                                 <rect key="frame" x="175" y="175" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="YR2-X0-kVb"/>
@@ -63,22 +63,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="I6b-Lx-c5L">
-                                <rect key="frame" x="260" y="255" width="81" height="90"/>
+                                <rect key="frame" x="161" y="79" width="278" height="442"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MT5-Bi-ygd">
-                                        <rect key="frame" x="0.0" y="0.0" width="81" height="30"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MT5-Bi-ygd">
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="185"/>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" title="CRUJIENTE"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="CRUJIENTE" backgroundImage="masaCrujiente 200ptos">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="seleccionadaTipoMasa:" destination="wrf-xM-tcN" eventType="touchUpInside" id="N9N-cA-tug"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTA-yb-BJf">
-                                        <rect key="frame" x="0.0" y="30" width="81" height="30"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTA-yb-BJf">
+                                        <rect key="frame" x="0.0" y="185" width="278" height="132"/>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" title="DELGADA"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="DELGADA" backgroundImage="masaDelgada 200ptos">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="seleccionadaTipoMasa:" destination="wrf-xM-tcN" eventType="touchUpInside" id="8i8-wM-lAp"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOX-Js-xWv">
-                                        <rect key="frame" x="0.0" y="60" width="81" height="30"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOX-Js-xWv">
+                                        <rect key="frame" x="0.0" y="317" width="278" height="125"/>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" title="GRUESA"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="GRUESA" backgroundImage="masaGruesa 200ptos">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="seleccionadaTipoMasa:" destination="wrf-xM-tcN" eventType="touchUpInside" id="uXK-Bw-Fz7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -108,7 +126,20 @@
                     <view key="view" contentMode="scaleToFill" id="iPN-gL-vxw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2IE-Nf-jV4">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
+                                <state key="normal" title="Siguiente"/>
+                                <connections>
+                                    <action selector="seleccion:" destination="x98-k5-lBz" eventType="touchUpInside" id="6Nd-qY-pSw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2IE-Nf-jV4" firstAttribute="centerY" secondItem="iPN-gL-vxw" secondAttribute="centerY" id="2sQ-S9-FfG"/>
+                            <constraint firstItem="2IE-Nf-jV4" firstAttribute="centerX" secondItem="iPN-gL-vxw" secondAttribute="centerX" id="LSh-tG-doV"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="BNv-fO-cnJ" kind="show" identifier="irAIngredientes" id="DIA-7N-op2"/>
@@ -128,12 +159,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="1" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1Ez-Jc-Img">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="Celda" textLabel="5GQ-CS-Scn" style="IBUITableViewCellStyleDefault" id="1Ez-Jc-Img">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Ez-Jc-Img" id="VKR-K3-CJo">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="561" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5GQ-CS-Scn">
+                                            <rect key="frame" x="15" y="0.0" width="546" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -178,6 +218,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="zdR-7o-ckT">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="A9Q-eH-CAy"/>
                     </connections>
@@ -188,6 +232,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tamañosPizza2" width="940" height="380"/>
+        <image name="masaCrujiente 200ptos" width="278" height="185"/>
+        <image name="masaDelgada 200ptos" width="200" height="132"/>
+        <image name="masaGruesa 200ptos" width="200" height="125"/>
     </resources>
 </document>

@@ -21,6 +21,9 @@ class Queso: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func seleccion(sender: UIButton) {
+        performSegueWithIdentifier("irAIngredientes", sender: nil)
+    }
 
     /*
     // MARK: - Navigation

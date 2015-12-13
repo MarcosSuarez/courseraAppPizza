@@ -10,11 +10,13 @@ import UIKit
 
 class Ingredientes: UITableViewController {
 
+    let ingredientes = ["Jamon", "Pavo", "Salchicha", "Pepperoni", "Pimiento", "Anchoa", "Cebolla", "Aceituna", "Pina"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        // preserve selection between presentations
+         self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
@@ -28,24 +30,27 @@ class Ingredientes: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        // número de sesiones
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        // número de filas
+        return ingredientes.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Celda", forIndexPath: indexPath)
 
-        // Configure the cell...
-
+        // Texto
+        cell.textLabel?.text = ingredientes[indexPath.row]
+        // Imagen
+        cell.imageView?.image = UIImage(named: ingredientes[indexPath.row])
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -82,7 +87,7 @@ class Ingredientes: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -90,6 +95,6 @@ class Ingredientes: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

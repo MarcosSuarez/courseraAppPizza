@@ -21,8 +21,16 @@ class Masa: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func seleccionadaTipoMasa(sender: UIButton) {
+        
+        // Revibe el tipo de masa seleccionado.
+        print("tipo de pizza seleccionado: \(sender.titleLabel!.text!)")
+        // Se le asigna a la variable el valor escogido.
+        performSegueWithIdentifier("irAQueso", sender: nil)
+        
+    }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -30,6 +38,6 @@ class Masa: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
