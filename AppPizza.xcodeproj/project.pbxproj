@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1749CAF21C1D623E00780701 /* Ingredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749CAF11C1D623E00780701 /* Ingredientes.swift */; };
+		1749CAF41C1D679D00780701 /* Resumen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749CAF31C1D679D00780701 /* Resumen.swift */; };
 		17A7EDE61C1C978E00819812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A7EDE51C1C978E00819812 /* AppDelegate.swift */; };
 		17A7EDE81C1C978E00819812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A7EDE71C1C978E00819812 /* ViewController.swift */; };
 		17A7EDEB1C1C978E00819812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A7EDE91C1C978E00819812 /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		17A7EDF01C1C978E00819812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A7EDEE1C1C978E00819812 /* LaunchScreen.storyboard */; };
 		17A7EDFB1C1C978F00819812 /* AppPizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A7EDFA1C1C978F00819812 /* AppPizzaTests.swift */; };
 		17A7EE061C1C978F00819812 /* AppPizzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A7EE051C1C978F00819812 /* AppPizzaUITests.swift */; };
+		17A7EE141C1C9C6000819812 /* Masa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A7EE131C1C9C6000819812 /* Masa.swift */; };
+		17A7EE181C1C9C9800819812 /* Queso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A7EE171C1C9C9800819812 /* Queso.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1749CAF11C1D623E00780701 /* Ingredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredientes.swift; sourceTree = "<group>"; };
+		1749CAF31C1D679D00780701 /* Resumen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resumen.swift; sourceTree = "<group>"; };
 		17A7EDE21C1C978E00819812 /* AppPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A7EDE51C1C978E00819812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17A7EDE71C1C978E00819812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		17A7EE011C1C978F00819812 /* AppPizzaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppPizzaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A7EE051C1C978F00819812 /* AppPizzaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPizzaUITests.swift; sourceTree = "<group>"; };
 		17A7EE071C1C978F00819812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A7EE131C1C9C6000819812 /* Masa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Masa.swift; sourceTree = "<group>"; };
+		17A7EE171C1C9C9800819812 /* Queso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queso.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				17A7EDEC1C1C978E00819812 /* Assets.xcassets */,
 				17A7EDEE1C1C978E00819812 /* LaunchScreen.storyboard */,
 				17A7EDF11C1C978E00819812 /* Info.plist */,
+				17A7EE131C1C9C6000819812 /* Masa.swift */,
+				17A7EE171C1C9C9800819812 /* Queso.swift */,
+				1749CAF11C1D623E00780701 /* Ingredientes.swift */,
+				1749CAF31C1D679D00780701 /* Resumen.swift */,
 			);
 			path = AppPizza;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A7EE181C1C9C9800819812 /* Queso.swift in Sources */,
 				17A7EDE81C1C978E00819812 /* ViewController.swift in Sources */,
+				1749CAF21C1D623E00780701 /* Ingredientes.swift in Sources */,
+				1749CAF41C1D679D00780701 /* Resumen.swift in Sources */,
 				17A7EDE61C1C978E00819812 /* AppDelegate.swift in Sources */,
+				17A7EE141C1C9C6000819812 /* Masa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +503,7 @@
 				17A7EE0C1C1C978F00819812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17A7EE0D1C1C978F00819812 /* Build configuration list for PBXNativeTarget "AppPizzaTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +512,7 @@
 				17A7EE0F1C1C978F00819812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17A7EE101C1C978F00819812 /* Build configuration list for PBXNativeTarget "AppPizzaUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +521,7 @@
 				17A7EE121C1C978F00819812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
